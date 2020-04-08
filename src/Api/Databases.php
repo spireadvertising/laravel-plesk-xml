@@ -57,4 +57,15 @@ class Databases extends AbstractApi
             'database' => ['get-db-users' => ['filter' => $params]]
         ]);
     }
+
+    /**
+     * @param array $params
+     * @return mixed
+     */
+    public function createUser($params)
+    {
+        return $this->post([
+            'database' => ['add-db-user' => $params]
+        ]);
+    }
 }
