@@ -29,6 +29,17 @@ class Subscriptions extends AbstractApi
      * @param $params
      * @return mixed
      */
+    public function update($params)
+    {
+        return $this->post([
+            'webspace' => ['set' => $params]
+        ]);
+    }
+
+    /**
+     * @param $params
+     * @return mixed
+     */
     public function delete($params)
     {
         return $this->post([
