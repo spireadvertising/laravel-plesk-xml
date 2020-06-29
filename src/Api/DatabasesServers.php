@@ -67,4 +67,15 @@ class DatabasesServers extends AbstractApi
             'db_server' => ['get-local' => ['filter' => $params]]
         ]);
     }
+
+    /**
+     * @param $params
+     * @return mixed
+     */
+    public function default($params)
+    {
+        return $this->post([
+            'db_server' => ['get-default' => ['filter' => $params]]
+        ]);
+    }
 }

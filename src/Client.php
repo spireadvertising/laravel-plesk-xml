@@ -18,6 +18,7 @@ class Client implements ClientInterface
         'databasesservers' => 'DatabasesServers',
         'dns' => 'Dns',
         'extensions' => 'Extensions',
+        'eventlog' => "EventLog",
         'ftp' => 'Ftp',
         'git' => 'Git',
         'ip' => 'Ip',
