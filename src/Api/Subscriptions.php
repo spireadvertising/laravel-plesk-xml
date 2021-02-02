@@ -101,4 +101,26 @@ class Subscriptions extends AbstractApi
             'webspace' => ['get_traffic' => ['filter' => $params]]
         ]);
     }
+
+    /**
+     * @param $params
+     * @return mixed
+     */
+    public function addPlan($params)
+    {
+        return $this->post([
+            'webspace' => ['add-subscription' => $params]
+        ]);
+    }
+
+    /**
+     * @param $params
+     * @return mixed
+     */
+    public function removePlan($params)
+    {
+        return $this->post([
+            'webspace' => ['remove-subscription' => $params]
+        ]);
+    }
 }
